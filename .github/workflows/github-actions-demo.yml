@@ -9,11 +9,8 @@ on:
     branches: [ "main" ]
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
-    steps:
-      
+    steps:    
 uses: actions/checkout@v4
 name: Use Node.js
     uses: actions/setup-node@v3
