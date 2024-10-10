@@ -26,6 +26,11 @@ jobs:
       - name: Run test
         run: npm run test
 
+      - name: Configure Git
+        run: |
+          git config --global user.email "cecilia.t.nguyen@gmail.com"
+          git config --global user.name "Cecilia Nguyen"
+
       - name: Deploy to GitHub Pages
         run: npx gh-pages -d build
         env:
